@@ -26,3 +26,15 @@ $('input').eq(2).keypress(function(){
         console.log(event);
     }
 })
+
+$('h1').eq(0).on('dblclick', function(){
+    $(this).toggleClass('turnRed');
+})
+
+$('h1').eq(1).on('mouseenter', function(){
+    $(this).toggleClass('turnRed');
+})
+
+$('h1').eq(2).on('click', function(){
+    $(this).fadeOut(3000);
+})
